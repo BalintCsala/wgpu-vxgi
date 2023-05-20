@@ -1,0 +1,7 @@
+/target
+node_modules/
+pkg/
+.vscode/
+.firebase/
+.firebaserc
+build.bat

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="origin-trial" content="Ave+lNkds8Lj5UJg6zpX10pvP16c0GbBIezwHRpmdPBvUnv9ivi5WeLbywrmSZaCS4fOF0+gP1H9bjc+J/Na2gEAAABreyJvcmlnaW4iOiJodHRwczovL3N6YWtkb2dhLmJhbGludGNzYWxhLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViR1BVIiwiZXhwaXJ5IjoxNjc1MjA5NTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZX0=">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGPU Voxel GI</title>
+    <style>
+        html, body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="voxel-gi">
+
+    </div>
+    <script type="module">
+        import init from "./js/voxel_gi.js";
+        init().then(() => {
+            console.log("WASM Loaded");
+        });
+    </script>
+    <style>
+        canvas {
+            background-color: black;
+        }
+    </style>
+</body>
+
+</html>

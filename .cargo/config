@@ -1,0 +1,4 @@
+[build]
+rustflags=["--cfg=web_sys_unstable_apis"]
+target = "wasm32-unknown-unknown"
+target_arch = "wasm32"
